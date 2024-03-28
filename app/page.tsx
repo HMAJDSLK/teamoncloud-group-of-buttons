@@ -8,14 +8,15 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className=''>
-      <Buttons text="Primary Button" type="primary" onClick={handleClick} size="lg" />
-      <Buttons text="Primary Button" type="primary" onClick={handleClick} size="md" />
-      <Buttons text="Primary Button" type="primary" onClick={handleClick} disabled={true} size='sm' />
+    <div className='flex items-center justify-center gap-4'>
+      <Buttons text="Primary LG" type="primary" onClick={handleClick} size="lg" />
+      <br /><br />
+      <Buttons text="Primary LG Disabled" type="primary" onClick={handleClick} disabled={true} size='lg' />
+      <br /><br /><br /><br />
 
-      <Buttons text="Secondary Button" type="secondary" onClick={handleClick} size="lg" />
-      <Buttons text="Secondary Button" type="secondary" onClick={handleClick} size="md" />
-      <Buttons text="Secondary Button" type="secondary" onClick={handleClick} disabled={true} size='sm' />
+      <Buttons text="Secondary SM" type="secondary" onClick={handleClick} size="sm" />
+      <br /><br />
+      <Buttons text="Secondary SM Disabled" type="secondary" onClick={handleClick} disabled={true} size='sm' />
     </div>
   );
 };
