@@ -26,7 +26,7 @@ const Buttons: React.FC<ButtonsProps> = ({ text, type, onClick, disabled, size }
   if (type === 'primary') {
     buttonsClass += ' bg-[#6F42C1] text-[#FFFFFF]';
   } else if (type === 'secondary') {
-    buttonsClass += ' bg-white text-[#6F42C1] border-violet-700 border-[1px]';
+    buttonsClass += disabled ? ' bg-neutral-500 text-[#FFFFFF] cursor-not-allowed ' :' bg-white text-[#6F42C1] border-violet-700 border-[1px]';
   }
 
   const hoverClass = disabled ? '' : (type === 'primary' ? 'hover:bg-[#875DD5] hover:text-[#FFFFFF]' : 'hover:bg-[#EEE5FF] hover:text-[#6F42C1]');
